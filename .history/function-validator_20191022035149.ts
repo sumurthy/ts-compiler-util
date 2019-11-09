@@ -102,30 +102,3 @@ console.log(printSourceFile(result2.transformed[0] as ts.SourceFile));
 * TRANSFORMATION - END 
 */
 
-/*
-
-
-const source: string = `function logString(param: string): void {
-  console.log(param);
-}`;
-
-const sourceFile: ts.SourceFile = ts.createSourceFile(
-  'test.ts', source, ts.ScriptTarget.ES2015, true, ts.ScriptKind.TS
-);
-
-// Options may be passed to transform
-const result: ts.TransformationResult<ts.SourceFile> = ts.transform(
-  sourceFile, [ yourTransformer ]
-);
-
-const transformedSourceFile: ts.SourceFile = result.transformed[0];
-
-// Options may be passed to createPrinter
-const printer: ts.Printer = ts.createPrinter();
-
-const generated: string = printer.printFile(transformedSourceFile);
-
-result.dispose();
-
-
-*/

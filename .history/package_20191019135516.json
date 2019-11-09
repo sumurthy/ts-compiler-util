@@ -1,10 +1,11 @@
 {
   "name": "ts-compiler-util",
   "version": "1.0.0",
-  "description": "",
+  "description": "TypeScript compiler uitlity",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "ts-node function-validator.ts ./src/input.ts"
   },
   "repository": {
     "type": "git",
